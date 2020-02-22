@@ -14,7 +14,7 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-import stories from '../Posts/stories'
+import stories from './stories'
 
 const Stories = () => {
   return (
