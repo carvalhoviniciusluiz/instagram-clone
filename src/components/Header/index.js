@@ -1,24 +1,24 @@
 import React from 'react';
 
-import { Container, Logo, ButtonAction } from './styles';
+import { Container, Logo, BtnAction } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   return (
     <Container>
-      <ButtonAction>
+      <BtnAction>
         <Icon name="camera" size={26} />
-      </ButtonAction>
+      </BtnAction>
 
       <Logo source={logo} />
 
-      <ButtonAction>
+      <BtnAction>
         <Icon name="paper-plane" size={26} />
-      </ButtonAction>
+      </BtnAction>
     </Container>
-  )
-}
+  );
+};
 
 export default Header;
