@@ -13,7 +13,8 @@ import {
 } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import avatar from '../../assets/images/avatar.png';
+
+import stories from '../Posts/stories'
 
 const Stories = () => {
   return (
@@ -27,61 +28,15 @@ const Stories = () => {
       </ContainerHeader>
 
       <ContainerScrollStory>
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
+        {stories && stories.map((story, index) => (
+          <ContainerItemStory key={index}>
+            <ContainerPhoto>
+              <Photo source={story.photo} />
+            </ContainerPhoto>
 
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
-
-        <ContainerItemStory>
-          <ContainerPhoto>
-            <Photo source={avatar} />
-          </ContainerPhoto>
-
-          <Name>Jake Sully</Name>
-        </ContainerItemStory>
+            <Name>{story.name}</Name>
+          </ContainerItemStory>
+        ))}
       </ContainerScrollStory>
     </Container>
   );
