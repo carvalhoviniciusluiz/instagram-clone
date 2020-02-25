@@ -15,7 +15,7 @@ import {
   Label
 } from './styles';
 
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import { FontAwesome5 } from '@expo/vector-icons';
 import posts from './posts';
 
 const Posts = () => {
@@ -38,17 +38,17 @@ const Posts = () => {
                 </ContainerPhoto>
                 <Name>{post.profile.name}</Name>
               </ContainerItemStory>
-              <Icon name="ellipsis-h" size={14} color="#888" />
+              <FontAwesome5 name="ellipsis-h" size={14} color="#888" />
           </ContainerHeader>
           <PostPhoto source={{ uri: post.postPhoto }} />
           <ContainerActions>
             <ContainerActionsIcons>
               <GroupIcons>
-                <Icon name="heart" {...iconsConfigure} />
-                <Icon name="circle" {...iconsConfigure} />
-                <Icon name="paper-plane" {...iconsConfigure} />
+                <FontAwesome5 name="heart" {...iconsConfigure} />
+                <FontAwesome5 name="circle" {...iconsConfigure} />
+                <FontAwesome5 name="paper-plane" {...iconsConfigure} />
               </GroupIcons>
-              <Icon name="bookmark" {...iconsConfigure} />
+              <FontAwesome5 name="bookmark" {...iconsConfigure} />
             </ContainerActionsIcons>
             <Label>2.850 Likes</Label>
             <Label>marinaii Hi !! #life</Label>

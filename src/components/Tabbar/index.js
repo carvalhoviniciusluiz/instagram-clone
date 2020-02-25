@@ -5,7 +5,7 @@ import {
   SubContainer
 } from './styles';
 
-import Icon from 'react-native-vector-icons/FontAwesome5'
+import { FontAwesome5 } from '@expo/vector-icons';
 
 const Tabbar = () => {
   const [iconConfigure] = useState({
@@ -16,11 +16,11 @@ const Tabbar = () => {
   return (
     <Container>
       <SubContainer>
-        <Icon name="home" { ...iconConfigure } />
-        <Icon name="search" { ...iconConfigure } />
-        <Icon name="instagram" { ...iconConfigure } />
-        <Icon name="heart" { ...iconConfigure } />
-        <Icon name="user" { ...iconConfigure } />
+        <FontAwesome5 name="home" { ...iconConfigure } />
+        <FontAwesome5 name="search" { ...iconConfigure } />
+        <FontAwesome5 name="instagram" { ...iconConfigure } />
+        <FontAwesome5 name="heart" { ...iconConfigure } />
+        <FontAwesome5 name="user" { ...iconConfigure } />
       </SubContainer>
     </Container>
   )

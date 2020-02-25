@@ -12,7 +12,7 @@ import {
   Name
 } from './styles';
 
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 import stories from './stories'
 
@@ -22,7 +22,7 @@ const Stories = () => {
       <ContainerHeader>
         <Label>Stories</Label>
         <GroupLabel>
-          <Icon name="caret-right" size={20} />
+          <FontAwesome5 name="caret-right" size={20} />
           <Label>Watch All</Label>
         </GroupLabel>
       </ContainerHeader>
